@@ -52,7 +52,7 @@ data.centers.forEach(center=>{
 
     center.sessions.forEach(session=>{
 
-        if(session.min_age_limit==18 && (session.vaccine=="COVAXIN" || session.vaccine=="COVISHIELD") && session.available_capacity_dose1>0 && session.fee_type === 'Free'){
+        if(session.min_age_limit==18 && (session.vaccine=="COVAXIN" || session.vaccine=="COVISHIELD") && session.available_capacity_dose1>0 && center.fee_type === 'Free'){
 
         let vaccine_slots = {
             "Slots Available" : session.available_capacity_dose1,
